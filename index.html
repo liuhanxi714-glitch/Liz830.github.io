@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Liz 的个人主页：记录设计、嵌入式开发、写作与持续发生的创作。">
+  <title>Liz · 个人主页</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="返回首页">LIZ<span>.</span></a>
+    <nav aria-label="主导航">
+      <a href="#about">关于</a>
+      <a href="#projects">项目</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="切换深色模式" aria-pressed="false">
+      <span class="theme-icon" aria-hidden="true">◐</span>
+      <span class="theme-label">夜间</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">DESIGN · EMBEDDED · WRITING</p>
+        <h1 id="hero-title">Hello, I'm <span>Liz</span>.</h1>
+        <p class="hero-intro">欢迎来到我的个人网站。这里收集我正在做的项目、持续思考的问题，以及那些值得被认真完成的小事。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">看看我的项目</a>
+          <a class="button secondary" href="#contact">和我聊聊</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="portrait-mark">
+          <span>L</span>
+          <small>MAKE IT REAL</small>
+        </div>
+        <span class="spark spark-one">✦</span>
+        <span class="spark spark-two">✦</span>
+      </div>
+
+      <p class="scroll-note">向下探索 <span>↓</span></p>
+    </section>
+
+    <section class="about section-shell" id="about" aria-labelledby="about-title">
+      <div class="section-heading reveal">
+        <p class="section-index">01 / ABOUT</p>
+        <h2 id="about-title">关于我</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-lead reveal">我喜欢辩论、设计、嵌入式开发，也在做一些有趣的个人项目。</p>
+        <div class="about-note reveal">
+          <p>我享受把一个模糊的念头，慢慢打磨成可以看见、触摸或分享的作品。</p>
+          <ul class="tags" aria-label="兴趣方向">
+            <li>产品设计</li>
+            <li>嵌入式开发</li>
+            <li>文字表达</li>
+            <li>独立创作</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section-shell" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading reveal">
+        <p class="section-index">02 / PROJECTS</p>
+        <h2 id="projects-title">我的项目</h2>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card reveal">
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <p class="project-type">HARDWARE × PRODUCT</p>
+            <h3>迷你显示屏项链</h3>
+            <p>一个结合嵌入式硬件与产品设计的个人项目。让技术不只藏在电路板里，也成为日常穿戴的一部分。</p>
+          </div>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-number">02</div>
+          <div class="project-content">
+            <p class="project-type">WRITING × LIFE</p>
+            <h3>公众号</h3>
+            <p>记录关于二十几岁、成长、孤独和人生选择的思考。把生活里的犹疑，写成能够抵达另一个人的文字。</p>
+          </div>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+      <p class="section-index reveal">03 / CONTACT</p>
+      <div class="contact-panel reveal">
+        <div>
+          <p class="contact-kicker">有想法，或者只是想打个招呼？</p>
+          <h2 id="contact-title">Let's make something<br><em>interesting.</em></h2>
+        </div>
+        <a class="contact-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          在 GitHub 找到我 <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Liz. Built with curiosity.</p>
+    <a href="#top">回到顶部 ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
